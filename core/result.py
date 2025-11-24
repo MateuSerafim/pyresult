@@ -74,7 +74,7 @@ class Result(Generic[T]):
         return self
     
     @staticmethod
-    def failures(errors: list[ResultError]) -> Result[T]:
+    def failures(errors: list[ResultError] = None) -> Result[T]:
         """
         Generate a Result fail with a list of errors.
         
@@ -98,7 +98,7 @@ class Result(Generic[T]):
         return self
     
     @staticmethod
-    def maybe(value: T | None, 
+    def maybe(value: T | None = None, 
               error_message: str = DEFAULT_NOT_FOUND_MESSAGE) -> Result[T]:
         """
         Generate a Result for a possible value.
