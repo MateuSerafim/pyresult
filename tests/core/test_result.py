@@ -1,6 +1,6 @@
 import unittest
-from core.result import Result, DEFAULT_UNKNOWN_ERROR_MESSAGE, DEFAULT_NOT_FOUND_MESSAGE
-from core.error_type import ErrorType, ResultError
+from src.result import Result, DEFAULT_UNKNOWN_ERROR_MESSAGE, DEFAULT_NOT_FOUND_MESSAGE
+from src.error_type import ErrorType, ResultError
 
 class ResultTests(unittest.TestCase):
 

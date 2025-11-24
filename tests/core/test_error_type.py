@@ -1,5 +1,5 @@
 import unittest
-from core.error_type import ResultError, ErrorType
+from src.error_type import ResultError, ErrorType
 
 class ResultErrorTests(unittest.TestCase):
 
